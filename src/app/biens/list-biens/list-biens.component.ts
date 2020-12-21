@@ -1,5 +1,5 @@
 import { Bien } from './bien';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-list-biens',
@@ -12,7 +12,7 @@ export class ListBiensComponent implements OnInit {
     {
       id: 1,
       title: "Studio",
-      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.",
       price: 400000,
       image: 'https://source.unsplash.com/1080x720/?home',
       state: true,
@@ -23,7 +23,7 @@ export class ListBiensComponent implements OnInit {
     {
       id: 2,
       title: "BMW X6",
-      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.",
       price: 15000000,
       image: 'https://source.unsplash.com/1080x720/?car',
       state: true,
@@ -34,7 +34,7 @@ export class ListBiensComponent implements OnInit {
     {
       id: 3,
       title: "BMW X5",
-      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.",
       price: 12000000,
       image: 'https://source.unsplash.com/1080x720/?car',
       state: true,
@@ -45,7 +45,7 @@ export class ListBiensComponent implements OnInit {
     {
       id: 4,
       title: "Appartenet F4",
-      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.",
       price: 45000000,
       image: 'https://source.unsplash.com/1080x720/?room',
       state: false,
@@ -56,7 +56,7 @@ export class ListBiensComponent implements OnInit {
     {
       id: 5,
       title: "Appartenet F3",
-      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.",
       price: 35000000,
       image: 'https://source.unsplash.com/1080x720/?bedroom',
       state: false,
@@ -67,7 +67,7 @@ export class ListBiensComponent implements OnInit {
     {
       id: 6,
       title: "Si longe lettre",
-      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.",
+      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.",
       price: 80000000,
       image: 'https://source.unsplash.com/1080x720/?book',
       state: true,
