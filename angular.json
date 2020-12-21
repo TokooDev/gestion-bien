@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "live-aly"
+  "defaultProject": "live-aly",
+  "cli": {
+    "analytics": false
+  }
 }
