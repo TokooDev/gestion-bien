@@ -7,13 +7,23 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { BiensComponent } from './biens/biens.component';
+import { AddBienComponent } from './biens/add-bien/add-bien.component';
+import { DetailBienComponent } from './biens/detail-bien/detail-bien.component';
+import { ListBiensComponent } from './biens/list-biens/list-biens.component';
+import { ItemBienComponent } from './biens/list-biens/item-bien/item-bien.component';
+import { JumbotronBienComponent } from './biens/jumbotron-bien/jumbotron-bien.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    BiensComponent
+    BiensComponent,
+    AddBienComponent,
+    DetailBienComponent,
+    ListBiensComponent,
+    ItemBienComponent,
+    JumbotronBienComponent
   ],
   imports: [
     BrowserModule,
