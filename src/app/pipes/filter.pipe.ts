@@ -5,13 +5,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterPipe implements PipeTransform {
 
-  transform(value: any, search: string, property: string): any {
-    if(value.length = 0){
+  transform(value: any, search: string, propertyName: string): any {
+    if(value.length == 0 || search.length===0){
       return value;
     }
     const resultArray = [];
     for(const item of value){
-      if(item[property] === search){
+      if(item[propertyName].includes(search)){
         resultArray.push(item);
       }
     }

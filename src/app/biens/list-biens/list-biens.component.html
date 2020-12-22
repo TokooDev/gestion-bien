@@ -1,8 +1,10 @@
 <div class="col-sm-3 m-4">
-  <input class="form-control mr-sm-2" type="text" placeholder="Search" [(ngModel)]= "search">
+  <input class="form-control mr-sm-2" type="text" placeholder="Rechercher un bien" [(ngModel)]= "search">
 </div>
 
 <div class="row m-4">
-  <app-item-bien *ngFor="let b of biens" class="col-sm-4 mb-5" [bien] = "b"></app-item-bien>
+  <app-item-bien *ngFor="let b of biens | filter:search:'title'" class="col-sm-4 mb-5" [bien] = "b"></app-item-bien>
 </div>
+
+<!-- | filter: search:property'title' -->
 
