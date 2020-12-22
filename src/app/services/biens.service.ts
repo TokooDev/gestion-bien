@@ -107,7 +107,8 @@ export class BiensService {
   //   }
   // }
 
-  // getLastId(){
-  //   return this.biens[this.biens]
-  // }
+  getLastId(): number{
+    return this.biens[this.biens.length - 1] ?
+      this.biens[this.biens.length - 1].id : 0;
+  }
 }
