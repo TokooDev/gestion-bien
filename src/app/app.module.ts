@@ -12,6 +12,10 @@ import { DetailBienComponent } from './biens/detail-bien/detail-bien.component';
 import { ListBiensComponent } from './biens/list-biens/list-biens.component';
 import { ItemBienComponent } from './biens/list-biens/item-bien/item-bien.component';
 import { JumbotronBienComponent } from './biens/jumbotron-bien/jumbotron-bien.component';
+import { SeparatorPipe } from './pipes/separator.pipe';
+import { TimeleftPipe } from './pipes/timeleft.pipe';
+import { SummarizePipe } from './pipes/summarize.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { JumbotronBienComponent } from './biens/jumbotron-bien/jumbotron-bien.co
     DetailBienComponent,
     ListBiensComponent,
     ItemBienComponent,
-    JumbotronBienComponent
+    JumbotronBienComponent,
+    SeparatorPipe,
+    TimeleftPipe,
+    SummarizePipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

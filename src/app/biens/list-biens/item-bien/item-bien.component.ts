@@ -1,3 +1,4 @@
+import { UtilsService } from './../../../services/utils.service';
 import { Bien } from './../bien';
 import { Component, OnInit, Input} from '@angular/core';
 
@@ -13,14 +14,7 @@ export class ItemBienComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  numberSeparator(nbre: number, sep: string){
-    let nombre: string = nbre.toString();
-    var reg = /(\d+)(\d{3})/;
-    while( reg.test( nombre)) {
-      nombre = nombre.replace( reg, '$1' +sep +'$2');
-    }
-    return nombre;
+  
 
-  }
 
 }

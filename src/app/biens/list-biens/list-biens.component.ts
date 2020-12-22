@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./list-biens.component.scss']
 })
 export class ListBiensComponent implements OnInit {
+
+  search: string = '';
   biens: Bien[]
     = [
     {
@@ -18,7 +20,7 @@ export class ListBiensComponent implements OnInit {
       state: true,
       category: 'Maison',
       sale: false,
-      createdAt: new Date(2020, 11, 13, 23, 43)
+      createdAt: new Date(2020, 9, 1, 23, 43)
     },
     {
       id: 2,
@@ -40,7 +42,7 @@ export class ListBiensComponent implements OnInit {
       state: true,
       category: 'Voiture',
       sale: false,
-      createdAt: new Date(2020, 11, 13, 10, 54)
+      createdAt: new Date(2019, 11, 13, 10, 54)
     },
     {
       id: 4,

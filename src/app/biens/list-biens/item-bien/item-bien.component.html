@@ -4,10 +4,10 @@
       <img class="card-img-top" [src]="bien.image" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{ bien.title |uppercase }}</h5>
-        <p class="card-text"> {{bien.description}} </p>
+        <p class="card-text"> {{bien.description | summarize: 100}} </p>
         <hr>
-        <span class="btn btn-sm btn-outline-warning disabled"> {{ numberSeparator(bien.price, '.') }} XOF </span>
-        <span class="btn btn-sm text-center disabled float-right">Il y'a 20h</span>
+        <span class="btn btn-sm btn-outline-warning disabled"> {{ bien.price | separator: '.'}} XOF </span>
+        <span class="btn btn-sm text-center disabled float-right">Il y'a {{bien.createdAt | timeleft}}</span>
         <p class="mt-4"><a href="#" class="btn btn-sm btn-success float-right">Réserver</a></p>
       </div>
     </div>
