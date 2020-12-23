@@ -16,6 +16,9 @@ import { SeparatorPipe } from './pipes/separator.pipe';
 import { TimeleftPipe } from './pipes/timeleft.pipe';
 import { SummarizePipe } from './pipes/summarize.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
+import { ReservationsBienComponent } from './biens/reservations-bien/reservations-bien.component';
+import { DetailReservationComponent } from './biens/reservations-bien/detail-reservation/detail-reservation.component';
+import { EditReservationComponent } from './biens/reservations-bien/edit-reservation/edit-reservation.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { FilterPipe } from './pipes/filter.pipe';
     SeparatorPipe,
     TimeleftPipe,
     SummarizePipe,
-    FilterPipe
+    FilterPipe,
+    ReservationsBienComponent,
+    DetailReservationComponent,
+    EditReservationComponent
   ],
   imports: [
     BrowserModule,
