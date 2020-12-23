@@ -8,7 +8,7 @@
         <hr>
         <span class="btn btn-sm btn-outline-warning disabled"> {{ bien.price | separator: '.'}} XOF </span>
         <span class="btn btn-sm text-center disabled float-right">Il y'a {{bien.createdAt | timeleft}}</span>
-        <p class="mt-4"><a href="#" class="btn btn-sm btn-success float-right">Réserver</a></p>
+        <p class="mt-4"><a [routerLink]="['/biens/',bien.id]" class="btn btn-sm btn-success float-right">En savoir plus</a></p>
       </div>
     </div>
   </div>

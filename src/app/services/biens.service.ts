@@ -72,7 +72,40 @@ export class BiensService {
       category: 'Livre',
       sale: false,
       createdAt: new Date(2020, 1, 15, 23, 45)
-    }
+    },
+    {
+      id: 7,
+      title: "Chaussure Mocassin",
+      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.",
+      price: 5000,
+      image: 'https://source.unsplash.com/1080x720/?shoes',
+      state: false,
+      category: 'Chaussures',
+      sale: false,
+      createdAt: new Date(2020, 7, 23, 14, 23)
+    },
+    {
+      id: 8,
+      title: "Balaciaga",
+      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.",
+      price: 8000,
+      image: 'https://source.unsplash.com/1080x720/?shoes',
+      state: true,
+      category: 'Chaussures',
+      sale: false,
+      createdAt: new Date(2020, 1, 15, 23, 45)
+    },
+    {
+      id: 9,
+      title: "Vie de boy",
+      description: "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.",
+      price: 80000000,
+      image: 'https://source.unsplash.com/1080x720/?book',
+      state: true,
+      category: 'Livre',
+      sale: false,
+      createdAt: new Date(2020, 1, 15, 23, 45)
+    },
 
   ];
 
