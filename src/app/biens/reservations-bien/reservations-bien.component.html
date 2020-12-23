@@ -1,32 +1,34 @@
 <div class="container">
-  <div class="col-sm-6">
-    <h3>Mes reservation</h3>
-  <hr>
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Date</th>
-        <th scope="col">Prix</th>
-        <th scope="col" class="text-center">Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td class="text-center">
-          <a [routerLink]="['/reservations',1]" class="btn btn-sm btn-outline-success mr-3">Détails</a>
-          <a [routerLink]="['/reservations',1,'edit']" class="btn btn-sm btn-outline-warning">Modifier</a>
-        </td>
-      </tr>
-      <tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="col-sm-6">
-    <router-outlet></router-outlet>
+  <div class="row">
+    <div class="col-sm-8">
+      <h3>Mes reservations</h3>
+    <hr>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Date</th>
+          <th scope="col">Prix</th>
+          <th scope="col" class="text-center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td class="text-center">
+            <a [routerLink]="['/reservations',1]" class="btn btn-sm btn-outline-success mr-3">Détails</a>
+            <a [routerLink]="['/reservations',1,'edit']" class="btn btn-sm btn-outline-warning">Modifier</a>
+          </td>
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="col-sm-4">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 
 </div>

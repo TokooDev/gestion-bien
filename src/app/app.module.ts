@@ -19,6 +19,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { ReservationsBienComponent } from './biens/reservations-bien/reservations-bien.component';
 import { DetailReservationComponent } from './biens/reservations-bien/detail-reservation/detail-reservation.component';
 import { EditReservationComponent } from './biens/reservations-bien/edit-reservation/edit-reservation.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { EditReservationComponent } from './biens/reservations-bien/edit-reserva
     FilterPipe,
     ReservationsBienComponent,
     DetailReservationComponent,
-    EditReservationComponent
+    EditReservationComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

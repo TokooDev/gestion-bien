@@ -1,3 +1,4 @@
+import { NotfoundComponent } from './notfound/notfound.component';
 import { DetailReservationComponent } from './biens/reservations-bien/detail-reservation/detail-reservation.component';
 import { EditReservationComponent } from './biens/reservations-bien/edit-reservation/edit-reservation.component';
 import { ReservationsBienComponent } from './biens/reservations-bien/reservations-bien.component';
@@ -20,6 +21,10 @@ const routes: Routes = [
       {path: ':id/edit', component: EditReservationComponent},
     ]
   },
+  {
+    path:'not-found', component: NotfoundComponent,
+  },
+  {path: '**', redirectTo:'/not-found'}
 
 
 
