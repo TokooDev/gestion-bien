@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container reserve">
   <div class="row">
     <div class="col-sm-8">
       <h3>Mes reservations</h3>
@@ -6,20 +6,20 @@
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Date</th>
+          <th scope="col">Bien reservé</th>
+          <th scope="col">Date de reservation</th>
           <th scope="col">Prix</th>
           <th scope="col" class="text-center">Action</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
+        <tr *ngFor="let reservation of reservations">
+          <td>{{reservation.bien}}</td>
+          <td>{{reservation.dateReservation | date: 'M/dd/yyyy'}}</td>
+          <td>{{reservation.price | separator: '.'}} xof</td>
           <td class="text-center">
-            <a [routerLink]="['/reservations',1]" class="btn btn-sm btn-outline-success mr-3">Détails</a>
-            <a [routerLink]="['/reservations',1,'edit']" class="btn btn-sm btn-outline-warning">Modifier</a>
+            <a [routerLink]="['/reservations',reservation.id]" class="text-info mr-2"><i class="fas fa-info-circle"></i></a>
+            <a [routerLink]="['/reservations',reservation.id,'edit']" class="text-warning"><i class="fas fa-edit"></i></a>
           </td>
         </tr>
         <tr>

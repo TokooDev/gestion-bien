@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Reservation} from './reservation';
+import {ReservationsService} from '../../services/reservations.service';
 
 @Component({
   selector: 'app-reservations-bien',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reservations-bien.component.scss']
 })
 export class ReservationsBienComponent implements OnInit {
-
-  constructor() { }
+  reservations: Reservation[] = [];
+  constructor(private reservationService: ReservationsService) { }
 
   ngOnInit(): void {
+    this.reservations = this.reservationService.getAllReservations();
   }
 
 }
